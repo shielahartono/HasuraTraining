@@ -1,0 +1,4 @@
+# Panduan Koneksi VPN, Akses Rancher, dan Deployment Hasura
+
+## 1. Koneksi ke VPN
+Langkah pertama adalah menghubungkan ke VPN menggunakan Pritunl.
