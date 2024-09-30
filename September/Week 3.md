@@ -15,7 +15,7 @@ Setelah VPN terhubung, gunakan informasi di bawah ini untuk login ke Rancher :
 ## Deploy Hasura 
 Setelah login, silahkan untuk melakukan deploy hasura, menyesuaikan dengan namespace yang sudah dibuat.
 
-Untuk list server dan juga namespace dapat dilihat pada link berikut [Link untuk Server] [List Server.xlsx](https://github.com/user-attachments/files/17197355/List.Server.xlsx)
+Untuk list server dan juga namespace dapat dilihat pada file berikut [List Server.xlsx](https://github.com/user-attachments/files/17197355/List.Server.xlsx)
 
 
 Berikut adalah kode yang saya gunakan :
