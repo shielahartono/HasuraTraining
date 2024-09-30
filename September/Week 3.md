@@ -13,7 +13,9 @@ Setelah VPN terhubung, gunakan informasi di bawah ini untuk login ke Rancher :
 - **Cluster Kubernetes:** `cluster-k8s-alldataint`
 
 ## Deploy Hasura 
-Setelah login, silahkan untuk melakukan deploy hasura, menyesuaikan dengan namespace yang sudah dibuat 
+Setelah login, silahkan untuk melakukan deploy hasura, menyesuaikan dengan namespace yang sudah dibuat.
+
+
 Berikut adalah kode yang saya gunakan :
 
 ```yaml
