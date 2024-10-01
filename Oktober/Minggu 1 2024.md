@@ -20,10 +20,22 @@
 
     2. Kemudian pada bagian get masukkan alamat atau ip hasura dan port yang digunakan  
 
-      Saya menggunakan 
-  ```
-  http://10.100.14.15:8087//v1/metrics
-  ```
+      Disini saya menggunakan http://10.100.14.15:8087//v1/metrics
+      
+    3. Kemudian Klik Send, Apabila muncul "Authorization Required" Lanjut ke step 4 .
+
+    4. Tambahkan pada bagian header yaitu key : "Authorization" dan value "hasura-uthar"
+
+    5. Lalu Klik Send
+
+
+    Maka akan muncul hasil sebagai berikut 
+
+![image](https://github.com/user-attachments/assets/1d966ad8-7989-4bd9-8fb6-793c51f1ca69)
+
+
+   
+ 
     
      
 
