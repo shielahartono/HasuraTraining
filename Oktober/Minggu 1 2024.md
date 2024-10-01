@@ -349,13 +349,13 @@ hasura_postgres_connection_init_time_count{conn_info="HASURA_GRAPHQL_DATABASE_UR
 
           berarti menunjukkan bahwa tidak ada koneksi yang berhasil diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−61.0×10 −6 detik (atau 1                  mikrodetik) untuk database yang terhubung.
          
-      2.hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-4",role="primary"} 0
+      2. hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-4",role="primary"} 0
 
-          berarti menunjukkan bahwa tidak ada koneksi ke database yang diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−41.0×10 −4 detik (atau 100             mikrodetik) untuk database yang terhubung.
+        berarti menunjukkan bahwa tidak ada koneksi ke database yang diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−41.0×10 −4 detik (atau 100             mikrodetik) untuk database yang terhubung.
    
-      3.hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
+      3. hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
 
-          berarti tidak ada koneksi ke database yang berhasil diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−21.0×10 −2 detik (atau 10 milidetik)            untuk database terhubung. 
+         berarti tidak ada koneksi ke database yang berhasil diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−21.0×10 −2 detik (atau 10 milidetik)            untuk database terhubung. 
          
 * hasura_postgres_connection_init_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.5990853e-2
 
@@ -408,7 +408,7 @@ hasura_postgres_pool_wait_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",sou
 
    metriks ini
 
-     1. hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
+     1.hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
         
         metriks ini
         
