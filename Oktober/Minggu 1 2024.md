@@ -29,15 +29,9 @@
     5. Lalu Klik Send
 
 
-    Maka akan muncul hasil sebagai berikut 
+## Hasil Output Metrics pada Postman 
 
 ![image](https://github.com/user-attachments/assets/1d966ad8-7989-4bd9-8fb6-793c51f1ca69)
-
-
-   
- 
-    
-     
 
 
 ## Penjelasan terkait hasil dari koneksi postman ke port metrics hasura
