@@ -481,29 +481,29 @@ hasura_websocket_message_queue_time_bucket{le="+Inf"} 0
 hasura_websocket_message_queue_time_sum 0.0
 hasura_websocket_message_queue_time_count 0
 ```
-*  hasura_websocket_message_queue_time histogram
+* hasura_websocket_message_queue_time histogram
 
-  metriks ini 
+  metriks ini menunjukkan histogram menggambarkan waktu yang dihabiskan untuk antrean pesan WebSocket sebelum diproses oleh server Hasura.
 
-    1.
+    1. hasura_websocket_message_queue_time_bucket{le="10.0"} 0
 
-      metriks ini menjelaskan bahwa 
+      metriks ini menjelaskan bahwa tidak ada pesan yang menunggu di antrean selama 0 hingga 10 detik. Artinya, semua pesan yang diterima diproses lebih cepat           dari 10 detik.
       
-    2.
+    2. hasura_websocket_message_queue_time_bucket{le="30.0"} 0
 
-      metriks ini menjelaskan bahwa
+      metriks ini menjelaskan bahwa tidak ada pesan yang menunggu di antrean selama 10 hingga 30 detik. Ini menunjukkan bahwa kinerja antrean sangat baik, dan           tidak ada pesan yang terjebak dalam antrean lebih dari 10 detik.
       
-    3.
+    3. hasura_websocket_message_queue_time_bucket{le="100.0"} 0
 
-      metriks ini menjelaskan bahwa
+      metriks ini menjelaskan bahwa tidak ada pesan yang menunggu di antrean selama 30 hingga 100 detik. Ini mengkonfirmasi bahwa sistem sangat               responsif, dengan tidak ada pesan yang memerlukan waktu antre lebih dari 30 detik.
 
 * hasura_websocket_message_queue_time_sum 0.0
 
-  metriks ini menjelaskan bahwa
+  metriks ini menjelaskan bahwa menunjukkan bahwa total waktu yang dihabiskan pesan dalam antrean adalah 0 detik
   
 * hasura_websocket_message_queue_time_count 0
 
-  metriks ini menjelaskan bahwa 
+  metriks ini menjelaskan bahwa bahwa jumlah total pesan yang telah ditangani melalui antrean adalah 0. Artinya, tidak ada pesan yang masuk ke antrean               WebSocket untuk diproses.
 
 
 ```
