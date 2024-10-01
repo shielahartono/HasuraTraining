@@ -86,7 +86,7 @@ hasura_event_fetch_time_per_batch_seconds_count 0
 # TYPE hasura_event_trigger_http_workers gauge
 hasura_event_trigger_http_workers 0.0
 ```
-hasura_event_trigger_http_workers 0.0
+* hasura_event_trigger_http_workers 0.0
 yang berarti tidak ada pekerja HTTP yang aktif saat ini untuk memproses event trigger. Tidak ada event yang sedang diproses melalui HTTP worker pada saat metrik ini dicatat.
 
 ```
@@ -95,7 +95,7 @@ yang berarti tidak ada pekerja HTTP yang aktif saat ini untuk memproses event tr
 hasura_event_trigger_request_bytes_total 0.0
 ```
 
-hasura_event_trigger_request_bytes_total 0.0
+* hasura_event_trigger_request_bytes_total 0.0
 berfungsi untuk memantau berapa banyak data yang telah dikirim dalam bentuk permintaan saat event trigger.Untuk nilai 0.0 berarti tidak ada data yang telah terkirim dalam bentuk request.
 
 ```
@@ -103,7 +103,7 @@ berfungsi untuk memantau berapa banyak data yang telah dikirim dalam bentuk perm
 # TYPE hasura_event_trigger_response_bytes_total counter
 hasura_event_trigger_response_bytes_total 0.0
 ```
-hasura_event_trigger_response_bytes_total 0.0
+* hasura_event_trigger_response_bytes_total 0.0
 bertujuan untuk memantau seberapa banyak data yang diterima sebagai respons setelah permintaan event trigger dilakukan.Untuk nilai 0.0 berarti tidak ada data yang diterima dalam bentuk respons HTTP melalui event triggers
 
 ```
@@ -113,8 +113,14 @@ bertujuan untuk memantau seberapa banyak data yang diterima sebagai respons sete
 hasura_events_fetched_per_batch 0.0
 ```
 
-```
+* hasura_events_fetched_per_batch 0.0
+  digunakan untuk memantau seberapa banyak event yang berhasil diambil dari sumber data dalam satu kali pengambilan atau proses.Untuk nilai 0.0 berarti tidak ada event yang diambil dalam batch tersebut pada saat metrik ini dicatat.
 
+  metrik ini memberikan informasi tentang efisiensi dan volume event yang diproses dalam sistem.
+
+
+
+```
 # HELP hasura_graphql_execution_time_seconds Execution time of successful GraphQL requests (excluding subscriptions)
 # TYPE hasura_graphql_execution_time_seconds histogram
 hasura_graphql_execution_time_seconds_bucket{operation_type="mutation",le="1.0e-2"} 0
@@ -138,6 +144,42 @@ hasura_graphql_execution_time_seconds_bucket{operation_type="query",le="+Inf"} 1
 hasura_graphql_execution_time_seconds_sum{operation_type="query"} 1.753502e-3
 hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
 ```
+* hasura_graphql_execution_time_seconds
+  metriks ini merupakan metrik histogram yang mencatat waktu eksekusi dari permintaan GraphQL (dalam detik). Metrik ini membantu untuk memantau performa eksekusi query dan mutation di Hasura.
+
+
+* hasura_graphql_execution_time_seconds_bucket{operation_type="mutation",le="1.0e-2"} 0
+  metriks ini berarti bahwa tidak ada permintaan mutation yang diselesaikan dalam waktu kurang dari atau sama dengan 0.01 detik (10 milidetik).
+
+
+* hasura_graphql_execution_time_seconds_bucket{operation_type="mutation",le="3.0e-2"} 0
+  metriks ini menunjukan atau memiliki arti bahwa tidak ada permintaan mutation yang diselesaikan dalam waktu kurang dari atau sama dengan 0.03 detik (30 milidetik)
+
+
+* hasura_graphql_execution_time_seconds_sum{operation_type="mutation"} 0.0
+  metriks ini berguna untuk menunjukan total waktu eksekusi untuk semua mutation adalah 0 detik.
+
+
+* hasura_graphql_execution_time_seconds_count{operation_type="mutation"} 0
+  metriks ini berguna untuk menunjukan jumlah total mutation yang dieksekusi adalah 0.
+
+
+* hasura_graphql_execution_time_seconds_bucket{operation_type="query",le="1.0e-2"} 1
+  metriks ini berarti bahwa 1 query telah dieksekusi dengan waktu eksekusi kurang dari atau sama dengan 0.01 detik (10 milidetik).
+
+
+* hasura_graphql_execution_time_seconds_bucket{operation_type="query",le="3.0e-2"} 1
+  metriks ini berarti bahwa 1 query yang sama juga selesai dalam waktu kurang dari atau sama dengan 0.03 detik (30 milidetik).
+
+
+* hasura_graphql_execution_time_seconds_sum{operation_type="query"} 1.753502e-3
+  metriks ini berarti untuk total waktu eksekusi untuk semua query yang diproses adalah sekitar 1.753502 milidetik
+
+
+* hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
+  metriks ini berarti bahwa hanya terdapat satu permintaan query dalam satu periode pengukuran.
+
+
 
 ```
 # HELP hasura_graphql_requests_total Number of GraphQL requests received (excluding subscriptions)
@@ -285,13 +327,4 @@ hasura_websocket_messages_received_bytes_total 0.0
 
 
   .
-
-* hasura_event_fetch_time_per_batch_seconds histogram
-
-  metriks ini untuk memantau seberapa cepat Hasura mengambil batch event dari database dan memetakan distribusi latensi pengambilan tersebut dalam berbagai interval waktu
-  1.hasura_event_fetch_time_per_batch_seconds_bucket{le="1.0e-4"} 0
-      metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0001 detik (1.0e-4) memiliki nilai 0
-  
-  2.hasura_event_fetch_time_per_batch_seconds_bucket{le="3.0e-4"} 0
-      metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0003 detik (3.0e-4) memiliki nilai 0
 
