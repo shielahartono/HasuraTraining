@@ -90,7 +90,7 @@ hasura_event_trigger_http_workers 0.0
 ```
 * hasura_event_trigger_http_workers 0.0
   
-yang berarti tidak ada pekerja HTTP yang aktif saat ini untuk memproses event trigger. Tidak ada event yang sedang diproses melalui HTTP worker pada saat metrik ini dicatat.
+  yang berarti tidak ada pekerja HTTP yang aktif saat ini untuk memproses event trigger. Tidak ada event yang sedang diproses melalui HTTP worker pada saat metrik   ini dicatat.
 
 ```
 # HELP hasura_event_trigger_request_bytes_total Total size of HTTP request bodies sent via event triggers (experimental)
