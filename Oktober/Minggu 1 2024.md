@@ -1,6 +1,6 @@
 # Postman Secret Metrics
 
-Penjelasan terkait hasil dari koneksi postman ke port metrics hasura
+## Penjelasan terkait hasil dari koneksi postman ke port metrics hasura
 
 ```
 # HELP hasura_action_request_bytes_total Total size of HTTP request bodies sent via actions (experimental)
@@ -230,7 +230,7 @@ hasura_websocket_messages_received_bytes_total 0.0
 ```
 
 
-
+## Penjelasan line per line 
 
 * hasura_action_request_bytes_total Total size of HTTP request bodies sent via actions (experimental)
 
@@ -256,5 +256,16 @@ hasura_websocket_messages_received_bytes_total 0.0
   metriks ini berguna untuk menunjukan nilai naik turun dari subsciprion pollers yang sedang berjalan secara real time.
 
 
-*
+* hasura_active_subscription_pollers{subscription_kind="live-query"} 0.0
+
+  metriks ini berarti menunjukkan jumlah poller yang aktif dari jenis berlangganan yaitu "live-query" yang berguna memantau data secara real time, dan untuk hasil nilai tersebut menunjukkan 0.0 bahwa tidak ada live-query yang sedang berjalan.
+
+* hasura_event_fetch_time_per_batch_seconds histogram
+
+  metriks ini untuk memantau seberapa cepat Hasura mengambil batch event dari database dan memetakan distribusi latensi pengambilan tersebut dalam berbagai interval waktu
+  1.hasura_event_fetch_time_per_batch_seconds_bucket{le="1.0e-4"} 0
+      metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0001 detik (1.0e-4) memiliki nilai 0
+  
+  2.hasura_event_fetch_time_per_batch_seconds_bucket{le="3.0e-4"} 0
+      metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0003 detik (3.0e-4) memiliki nilai 0
 
