@@ -211,7 +211,7 @@ hasura_graphql_requests_total{response_status="success",operation_type="query",p
 hasura_http_connections 1.0
 ```
 
-*hasura_http_connections 1.0
+* hasura_http_connections 1.0
 
   metriks ini berguna untuk menunjukkan jumlah koneksi HTTP aktif yang sedang digunakan oleh Hasura. Dan pada metriks ini terdapat 1 koneksi aktif yang dibuka       oleh Hasura
 
