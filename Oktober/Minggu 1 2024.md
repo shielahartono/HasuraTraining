@@ -14,3 +14,12 @@ Penjelasan terkait hasil dari koneksi postman ke port metrics hasura
 
   berarti belum ada data yang dikirim karena masih memiliki jumlah yaitu 0.0 byte
 
+* hasura_active_subscription_pollers Current active number of subscription pollers running
+
+  artinya jumlah saat ini dari subscription pollers yang aktif dan berjalan di Hasura
+
+  Subscription pollers adalah komponen yang memantau perubahan data secara real-time untuk subscriptions (kueri berlangganan) yang dijalankan oleh pengguna
+
+
+*
+
