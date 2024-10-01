@@ -9,7 +9,7 @@ hasura_action_request_bytes_total 0.0
 ```
 * hasura_action_request_bytes_total Total size of HTTP request bodies sent via actions (experimental)
 
-  adalah ukuran total dari semua body permintaan HTTP yang dikirim melalui actions dalam Hasura. "Actions" dalam Hasura memungkinkan Anda untuk memperluas logika GraphQL dengan API eksternal atau logika kustom, dan metrik ini mengukur total jumlah data (dalam byte) yang dikirimkan dalam bentuk permintaan HTTP selama penggunaan actions. Penggunaan kata experimental berarti bahwa fitur ini masih dalam status pengembangan
+  adalah ukuran total dari semua body permintaan HTTP yang dikirim melalui actions dalam Hasura. "Actions" dalam Hasura memungkinkan Anda untuk memperluas logika    GraphQL dengan API eksternal atau logika kustom, dan metrik ini mengukur total jumlah data (dalam byte) yang dikirimkan dalam bentuk permintaan HTTP selama        penggunaan actions. Penggunaan kata experimental berarti bahwa fitur ini masih dalam status pengembangan
 
 * hasura_action_request_bytes_total counter
 
@@ -37,7 +37,7 @@ hasura_active_subscription_pollers{subscription_kind="streaming"} 0.0
 
   artinya jumlah saat ini dari subscription pollers yang aktif dan berjalan di Hasura
 
-Subscription pollers adalah komponen yang memantau perubahan data secara real-time untuk subscriptions (kueri berlangganan) yang dijalankan oleh pengguna
+  Subscription pollers adalah komponen yang memantau perubahan data secara real-time untuk subscriptions (kueri berlangganan) yang dijalankan oleh pengguna
 
 
 * hasura_active_subscription_pollers gauge
@@ -47,7 +47,7 @@ Subscription pollers adalah komponen yang memantau perubahan data secara real-ti
 
 * hasura_active_subscription_pollers{subscription_kind="live-query"} 0.0
 
-  metriks ini berarti menunjukkan jumlah poller yang aktif dari jenis berlangganan yaitu "live-query" yang berguna memantau data secara real time, dan untuk hasil nilai tersebut menunjukkan 0.0 bahwa tidak ada live-query yang sedang berjalan
+  metriks ini berarti menunjukkan jumlah poller yang aktif dari jenis berlangganan yaitu "live-query" yang berguna memantau data secara real time, dan untuk hasil   nilai tersebut menunjukkan 0.0 bahwa tidak ada live-query yang sedang berjalan
 
 ```
 
@@ -71,13 +71,15 @@ hasura_event_fetch_time_per_batch_seconds_count 0
 ```
 * hasura_event_fetch_time_per_batch_seconds histogram
 
-  metriks ini untuk memantau seberapa cepat Hasura mengambil batch event dari database dan memetakan distribusi latensi pengambilan tersebut dalam berbagai interval waktu
+  metriks ini untuk memantau seberapa cepat Hasura mengambil batch event dari database dan memetakan distribusi latensi pengambilan tersebut dalam berbagai          interval waktu
 
 
   1.hasura_event_fetch_time_per_batch_seconds_bucket{le="1.0e-4"} 0
+  
       metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0001 detik (1.0e-4) memiliki nilai 0
   
   2.hasura_event_fetch_time_per_batch_seconds_bucket{le="3.0e-4"} 0
+  
       metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0003 detik (3.0e-4) memiliki nilai 0
 
 
@@ -87,6 +89,7 @@ hasura_event_fetch_time_per_batch_seconds_count 0
 hasura_event_trigger_http_workers 0.0
 ```
 * hasura_event_trigger_http_workers 0.0
+  
 yang berarti tidak ada pekerja HTTP yang aktif saat ini untuk memproses event trigger. Tidak ada event yang sedang diproses melalui HTTP worker pada saat metrik ini dicatat.
 
 ```
