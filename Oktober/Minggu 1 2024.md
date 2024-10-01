@@ -3,6 +3,8 @@
 ## Menambahkan Code Deployment pada Rancher
 
    Pada bagian Deployment, diperlukan untuk menambahkan code 
+   
+   
    Untuk codenya adalah sebagai berikut 
    
 ```
