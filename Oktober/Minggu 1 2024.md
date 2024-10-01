@@ -185,51 +185,94 @@ hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
 # HELP hasura_graphql_requests_total Number of GraphQL requests received (excluding subscriptions)
 # TYPE hasura_graphql_requests_total counter
 hasura_graphql_requests_total{response_status="success",operation_type="query",parameterized_query_hash="7116865cef017c3b09e5c9271b0e182a6dcf4c01"} 1.0
+```
+*hasura_graphql_requests_total{response_status="success",operation_type="query",parameterized_query_hash="7116865cef017c3b09e5c9271b0e182a6dcf4c01"} 1.0
+  metriks ini berguna untuk melakukan mengambil data request secara total untuk respons status dengan nilai sukses dan juga operation type dengan nilai query. Dan memeberikan parameter hash untuk identifikasi query yang dijalankan. Dan pada metriks ini terdapat 1 permintaan query yang berhasil di jalankan.
 
+```
 # HELP hasura_http_connections Current number of active HTTP connections (excluding WebSocket connections)
 # TYPE hasura_http_connections gauge
 hasura_http_connections 1.0
+```
 
+*hasura_http_connections 1.0
+metriks ini berguna untuk menunjukkan jumlah koneksi HTTP aktif yang sedang digunakan oleh Hasura. Dan pada metriks ini terdapat 1 koneksi aktif yang dibuka oleh Hasura
+
+
+```
 # HELP hasura_http_request_bytes_total Total size of HTTP request bodies received via the HTTP server
 # TYPE hasura_http_request_bytes_total counter
 hasura_http_request_bytes_total 1968.0
+```
 
+* hasura_http_request_bytes_total 1968.0
+  metriks ini berguna untuk menunjukkan total ukuran dari semua body permintaan HTTP yang diterima oleh Hasura. Pada nilai ini menunjukkan 1968 byte.
+
+
+```
 # HELP hasura_http_response_bytes_total Total size of HTTP response bodies sent via the HTTP server
 # TYPE hasura_http_response_bytes_total counter
 hasura_http_response_bytes_total 9051.0
+```
+* hasura_http_response_bytes_total 9051.0
+  metriks ini berguna untuk menunjukkan total ukuran dari semua body respons HTTP yang dikirim oleh Hasura. Pada metriks ini menunjukkan hasil 9051 byte.
 
+```
 # HELP hasura_metadata_resource_version Current metadata resource version
 # TYPE hasura_metadata_resource_version gauge
 hasura_metadata_resource_version 22.0
+```
+* hasura_metadata_resource_version 22.0
+  metriks ini berguna untuk menunjukkan versi dari metadata yang digunakan oleh Hasura. Saat ini menggunakan versi 22.
 
+```
 # HELP hasura_oneoff_events_invocation_total Total number of one-off events invoked
 # TYPE hasura_oneoff_events_invocation_total counter
 hasura_oneoff_events_invocation_total{status="failed"} 0.0
 hasura_oneoff_events_invocation_total{status="success"} 0.0
+```
 
+
+
+```
 # HELP hasura_oneoff_events_processed_total Total number of one-off events processed
 # TYPE hasura_oneoff_events_processed_total counter
 hasura_oneoff_events_processed_total{status="failed"} 0.0
 hasura_oneoff_events_processed_total{status="success"} 0.0
+```
 
+
+```
 # HELP hasura_otel_dropped_logs Total number of log lines dropped due to high log volume
 # TYPE hasura_otel_dropped_logs counter
 hasura_otel_dropped_logs{reason="buffer_full"} 0.0
 hasura_otel_dropped_logs{reason="send_failed"} 0.0
+```
 
+
+```
 # HELP hasura_otel_dropped_spans Total number of trace spans dropped due to high trace volume
 # TYPE hasura_otel_dropped_spans counter
 hasura_otel_dropped_spans{reason="buffer_full"} 0.0
 hasura_otel_dropped_spans{reason="send_failed"} 0.0
+```
 
+
+```
 # HELP hasura_otel_sent_logs Total number of successfully exported log lines
 # TYPE hasura_otel_sent_logs counter
 hasura_otel_sent_logs 0.0
+```
 
+
+
+```
 # HELP hasura_otel_sent_spans Total number of successfully exported trace spans
 # TYPE hasura_otel_sent_spans counter
 hasura_otel_sent_spans 0.0
+```
 
+```
 # HELP hasura_postgres_connection_init_time Time taken (in seconds) to establish and initialise a new PostgreSQL connection
 # TYPE hasura_postgres_connection_init_time histogram
 hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-6",role="primary"} 0
@@ -245,15 +288,24 @@ hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_U
 hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="+Inf",role="primary"} 1
 hasura_postgres_connection_init_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.5990853e-2
 hasura_postgres_connection_init_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1
+```
 
+
+```
 # HELP hasura_postgres_connections Current number of active PostgreSQL connections
 # TYPE hasura_postgres_connections gauge
 hasura_postgres_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 0.0
+```
 
+
+```
 # HELP hasura_postgres_max_connections Maximum number of PostgreSQL connections set for this project on the current multitenant worker
 # TYPE hasura_postgres_max_connections gauge
 hasura_postgres_max_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 50.0
+```
 
+
+```
 # HELP hasura_postgres_pool_wait_time Time taken (in seconds) to acquire a connection from the pool
 # TYPE hasura_postgres_pool_wait_time histogram
 hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-6",role="primary"} 0
@@ -269,19 +321,33 @@ hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",so
 hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="+Inf",role="primary"} 1
 hasura_postgres_pool_wait_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.6099813e-2
 hasura_postgres_pool_wait_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1
+```
 
+
+```
 # HELP hasura_scheduled_trigger_request_bytes_total Total size of HTTP request bodies sent via scheduled triggers (experimental)
 # TYPE hasura_scheduled_trigger_request_bytes_total counter
 hasura_scheduled_trigger_request_bytes_total 0.0
+```
 
+
+
+```
 # HELP hasura_scheduled_trigger_response_bytes_total Total size of HTTP response bodies received via scheduled triggers (experimental)
 # TYPE hasura_scheduled_trigger_response_bytes_total counter
 hasura_scheduled_trigger_response_bytes_total 0.0
+```
 
+
+```
 # HELP hasura_websocket_connections Current number of active WebSocket connections
 # TYPE hasura_websocket_connections gauge
 hasura_websocket_connections 0.0
+```
 
+
+
+```
 # HELP hasura_websocket_message_queue_time The time (in seconds) for which a websocket message remains queued in the GraphQL engine's websocket queue
 # TYPE hasura_websocket_message_queue_time histogram
 hasura_websocket_message_queue_time_bucket{le="1.0e-6"} 0
@@ -297,7 +363,11 @@ hasura_websocket_message_queue_time_bucket{le="100.0"} 0
 hasura_websocket_message_queue_time_bucket{le="+Inf"} 0
 hasura_websocket_message_queue_time_sum 0.0
 hasura_websocket_message_queue_time_count 0
+```
 
+
+
+```
 # HELP hasura_websocket_message_write_time The time taken (in seconds) to write a websocket message into the TCP send buffer
 # TYPE hasura_websocket_message_write_time histogram
 hasura_websocket_message_write_time_bucket{le="1.0e-6"} 0
@@ -313,7 +383,11 @@ hasura_websocket_message_write_time_bucket{le="100.0"} 0
 hasura_websocket_message_write_time_bucket{le="+Inf"} 0
 hasura_websocket_message_write_time_sum 0.0
 hasura_websocket_message_write_time_count 0
+```
 
+
+
+```
 # HELP hasura_websocket_messages_received_bytes_total Total size of WebSocket messages received
 # TYPE hasura_websocket_messages_received_bytes_total counter
 hasura_websocket_messages_received_bytes_total 0.0
