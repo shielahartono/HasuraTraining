@@ -96,6 +96,7 @@ hasura_event_trigger_request_bytes_total 0.0
 ```
 
 * hasura_event_trigger_request_bytes_total 0.0
+
 berfungsi untuk memantau berapa banyak data yang telah dikirim dalam bentuk permintaan saat event trigger.Untuk nilai 0.0 berarti tidak ada data yang telah terkirim dalam bentuk request.
 
 ```
@@ -104,6 +105,7 @@ berfungsi untuk memantau berapa banyak data yang telah dikirim dalam bentuk perm
 hasura_event_trigger_response_bytes_total 0.0
 ```
 * hasura_event_trigger_response_bytes_total 0.0
+
 bertujuan untuk memantau seberapa banyak data yang diterima sebagai respons setelah permintaan event trigger dilakukan.Untuk nilai 0.0 berarti tidak ada data yang diterima dalam bentuk respons HTTP melalui event triggers
 
 ```
@@ -114,6 +116,7 @@ hasura_events_fetched_per_batch 0.0
 ```
 
 * hasura_events_fetched_per_batch 0.0
+
   digunakan untuk memantau seberapa banyak event yang berhasil diambil dari sumber data dalam satu kali pengambilan atau proses.Untuk nilai 0.0 berarti tidak ada event yang diambil dalam batch tersebut pada saat metrik ini dicatat.
 
   metrik ini memberikan informasi tentang efisiensi dan volume event yang diproses dalam sistem.
@@ -145,6 +148,7 @@ hasura_graphql_execution_time_seconds_sum{operation_type="query"} 1.753502e-3
 hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
 ```
 * hasura_graphql_execution_time_seconds
+  
   metriks ini merupakan metrik histogram yang mencatat waktu eksekusi dari permintaan GraphQL (dalam detik). Metrik ini membantu untuk memantau performa eksekusi query dan mutation di Hasura.
 
 
@@ -157,10 +161,12 @@ hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
 
 
 * hasura_graphql_execution_time_seconds_sum{operation_type="mutation"} 0.0
+  
   metriks ini berguna untuk menunjukan total waktu eksekusi untuk semua mutation adalah 0 detik.
 
 
 * hasura_graphql_execution_time_seconds_count{operation_type="mutation"} 0
+  
   metriks ini berguna untuk menunjukan jumlah total mutation yang dieksekusi adalah 0.
 
 
@@ -173,10 +179,12 @@ hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
 
 
 * hasura_graphql_execution_time_seconds_sum{operation_type="query"} 1.753502e-3
+  
   metriks ini berarti untuk total waktu eksekusi untuk semua query yang diproses adalah sekitar 1.753502 milidetik
 
 
 * hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
+  
   metriks ini berarti bahwa hanya terdapat satu permintaan query dalam satu periode pengukuran.
 
 
@@ -187,6 +195,7 @@ hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
 hasura_graphql_requests_total{response_status="success",operation_type="query",parameterized_query_hash="7116865cef017c3b09e5c9271b0e182a6dcf4c01"} 1.0
 ```
 *hasura_graphql_requests_total{response_status="success",operation_type="query",parameterized_query_hash="7116865cef017c3b09e5c9271b0e182a6dcf4c01"} 1.0
+
   metriks ini berguna untuk melakukan mengambil data request secara total untuk respons status dengan nilai sukses dan juga operation type dengan nilai query. Dan memeberikan parameter hash untuk identifikasi query yang dijalankan. Dan pada metriks ini terdapat 1 permintaan query yang berhasil di jalankan.
 
 ```
@@ -196,6 +205,7 @@ hasura_http_connections 1.0
 ```
 
 *hasura_http_connections 1.0
+
 metriks ini berguna untuk menunjukkan jumlah koneksi HTTP aktif yang sedang digunakan oleh Hasura. Dan pada metriks ini terdapat 1 koneksi aktif yang dibuka oleh Hasura
 
 
@@ -206,6 +216,7 @@ hasura_http_request_bytes_total 1968.0
 ```
 
 * hasura_http_request_bytes_total 1968.0
+  
   metriks ini berguna untuk menunjukkan total ukuran dari semua body permintaan HTTP yang diterima oleh Hasura. Pada nilai ini menunjukkan 1968 byte.
 
 
@@ -215,6 +226,7 @@ hasura_http_request_bytes_total 1968.0
 hasura_http_response_bytes_total 9051.0
 ```
 * hasura_http_response_bytes_total 9051.0
+  
   metriks ini berguna untuk menunjukkan total ukuran dari semua body respons HTTP yang dikirim oleh Hasura. Pada metriks ini menunjukkan hasil 9051 byte.
 
 ```
@@ -223,6 +235,7 @@ hasura_http_response_bytes_total 9051.0
 hasura_metadata_resource_version 22.0
 ```
 * hasura_metadata_resource_version 22.0
+  
   metriks ini berguna untuk menunjukkan versi dari metadata yang digunakan oleh Hasura. Saat ini menggunakan versi 22.
 
 ```
@@ -231,6 +244,13 @@ hasura_metadata_resource_version 22.0
 hasura_oneoff_events_invocation_total{status="failed"} 0.0
 hasura_oneoff_events_invocation_total{status="success"} 0.0
 ```
+* hasura_oneoff_events_invocation_total{status="failed"} 0.0
+
+  metriks ini menunjukkan jumlah total invokasi (panggilan) untuk one-off events yang gagal.
+
+* hasura_oneoff_events_invocation_total{status="success"} 0.0
+
+  metriks ini menunjukkan jumlah total invokasi (panggilan) untuk one-off events yang berhasil.
 
 
 
@@ -240,6 +260,14 @@ hasura_oneoff_events_invocation_total{status="success"} 0.0
 hasura_oneoff_events_processed_total{status="failed"} 0.0
 hasura_oneoff_events_processed_total{status="success"} 0.0
 ```
+
+* hasura_oneoff_events_processed_total{status="failed"} 0.0
+
+  metriks ini 
+
+* hasura_oneoff_events_processed_total{status="success"} 0.0
+
+  metriks ini
 
 
 ```
