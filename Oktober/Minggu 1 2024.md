@@ -1,4 +1,32 @@
-# Postman Secret Metrics
+# Analisa Output Postman Secret Metrics
+
+## Menambahkan Code Deployment pada Rancher
+
+   Pada bagian Deployment, diperlukan untuk menambahkan code 
+   Untuk codenya adalah sebagai berikut 
+   
+```
+- name: HASURA_GRAPHQL_ENABLED_APIS
+  value: metadata,graphql,config,metrics
+- name: HASURA_GRAPHQL_METRICS_SECRET
+  value: hasura-uthar
+```
+
+## Menjalankan Metrics pada Postman 
+
+    Langkah berikutnya adalah menjalankan Endpoint Metrics pada Postman 
+
+    1. Membuka Postman lalu Klik New  -> pilih HTTP
+
+    2. Kemudian pada bagian get masukkan alamat atau ip hasura dan port yang digunakan  
+
+      Saya menggunakan 
+  ```
+  http://10.100.14.15:8087//v1/metrics
+  ```
+    
+     
+
 
 ## Penjelasan terkait hasil dari koneksi postman ke port metrics hasura
 
