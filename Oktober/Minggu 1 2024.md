@@ -82,23 +82,32 @@ hasura_event_fetch_time_per_batch_seconds_count 0
 
 
 ```
-
-
 # HELP hasura_event_trigger_http_workers Current number of active event trigger HTTP workers
 # TYPE hasura_event_trigger_http_workers gauge
 hasura_event_trigger_http_workers 0.0
+```
 
+```
 # HELP hasura_event_trigger_request_bytes_total Total size of HTTP request bodies sent via event triggers (experimental)
 # TYPE hasura_event_trigger_request_bytes_total counter
 hasura_event_trigger_request_bytes_total 0.0
+```
 
+
+```
 # HELP hasura_event_trigger_response_bytes_total Total size of HTTP response bodies received via event triggers (experimental)
 # TYPE hasura_event_trigger_response_bytes_total counter
 hasura_event_trigger_response_bytes_total 0.0
+```
+
+```
 
 # HELP hasura_events_fetched_per_batch Number of events fetched in a batch
 # TYPE hasura_events_fetched_per_batch gauge
 hasura_events_fetched_per_batch 0.0
+```
+
+```
 
 # HELP hasura_graphql_execution_time_seconds Execution time of successful GraphQL requests (excluding subscriptions)
 # TYPE hasura_graphql_execution_time_seconds histogram
@@ -122,7 +131,9 @@ hasura_graphql_execution_time_seconds_bucket{operation_type="query",le="10.0"} 1
 hasura_graphql_execution_time_seconds_bucket{operation_type="query",le="+Inf"} 1
 hasura_graphql_execution_time_seconds_sum{operation_type="query"} 1.753502e-3
 hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
+```
 
+```
 # HELP hasura_graphql_requests_total Number of GraphQL requests received (excluding subscriptions)
 # TYPE hasura_graphql_requests_total counter
 hasura_graphql_requests_total{response_status="success",operation_type="query",parameterized_query_hash="7116865cef017c3b09e5c9271b0e182a6dcf4c01"} 1.0
