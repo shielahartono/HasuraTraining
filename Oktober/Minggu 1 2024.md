@@ -76,11 +76,11 @@ hasura_event_fetch_time_per_batch_seconds_count 0
 
   1. hasura_event_fetch_time_per_batch_seconds_bucket{le="1.0e-4"} 0
   
-    metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0001 detik (1.0e-4) memiliki nilai 0
+     metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0001 detik (1.0e-4) memiliki nilai 0
   
   2. hasura_event_fetch_time_per_batch_seconds_bucket{le="3.0e-4"} 0
   
-    metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0003 detik (3.0e-4) memiliki nilai 0
+     metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0003 detik (3.0e-4) memiliki nilai 0
 
 
 ```
@@ -316,7 +316,7 @@ hasura_otel_sent_logs 0.0
 ```
 *hasura_otel_sent_logs 0.0
 
-  metriks ini memberikan informasi tentang jumlah log yang berhasil dikirim oleh sistem observasi Hasura.
+ metriks ini memberikan informasi tentang jumlah log yang berhasil dikirim oleh sistem observasi Hasura.
 
 
 ```
@@ -351,11 +351,11 @@ hasura_postgres_connection_init_time_count{conn_info="HASURA_GRAPHQL_DATABASE_UR
 
       1. hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-6",role="primary"} 0
 
-          berarti menunjukkan bahwa tidak ada koneksi yang berhasil diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−61.0×10 −6 detik (atau 1                  mikrodetik) untuk database yang terhubung.
+         berarti menunjukkan bahwa tidak ada koneksi yang berhasil diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−61.0×10 −6 detik (atau 1                  mikrodetik) untuk database yang terhubung.
          
       2. hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-4",role="primary"} 0
 
-        berarti menunjukkan bahwa tidak ada koneksi ke database yang diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−41.0×10 −4 detik (atau 100             mikrodetik) untuk database yang terhubung.
+         berarti menunjukkan bahwa tidak ada koneksi ke database yang diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−41.0×10 −4 detik (atau 100             mikrodetik) untuk database yang terhubung.
    
       3. hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
 
@@ -508,6 +508,10 @@ hasura_websocket_message_write_time_count 0
 # TYPE hasura_websocket_messages_received_bytes_total counter
 hasura_websocket_messages_received_bytes_total 0.0
 ```
+
+* hasura_websocket_messages_received_bytes_total 0.0
+
+metriks ini menunjukkan 
 
 
 
