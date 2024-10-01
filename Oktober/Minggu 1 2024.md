@@ -86,6 +86,8 @@ hasura_event_fetch_time_per_batch_seconds_count 0
 # TYPE hasura_event_trigger_http_workers gauge
 hasura_event_trigger_http_workers 0.0
 ```
+hasura_event_trigger_http_workers 0.0
+yang berarti tidak ada pekerja HTTP yang aktif saat ini untuk memproses event trigger. Tidak ada event yang sedang diproses melalui HTTP worker pada saat metrik ini dicatat.
 
 ```
 # HELP hasura_event_trigger_request_bytes_total Total size of HTTP request bodies sent via event triggers (experimental)
@@ -93,12 +95,16 @@ hasura_event_trigger_http_workers 0.0
 hasura_event_trigger_request_bytes_total 0.0
 ```
 
+hasura_event_trigger_request_bytes_total 0.0
+berfungsi untuk memantau berapa banyak data yang telah dikirim dalam bentuk permintaan saat event trigger.Untuk nilai 0.0 berarti tidak ada data yang telah terkirim dalam bentuk request.
 
 ```
 # HELP hasura_event_trigger_response_bytes_total Total size of HTTP response bodies received via event triggers (experimental)
 # TYPE hasura_event_trigger_response_bytes_total counter
 hasura_event_trigger_response_bytes_total 0.0
 ```
+hasura_event_trigger_response_bytes_total 0.0
+bertujuan untuk memantau seberapa banyak data yang diterima sebagai respons setelah permintaan event trigger dilakukan.Untuk nilai 0.0 berarti tidak ada data yang diterima dalam bentuk respons HTTP melalui event triggers
 
 ```
 
