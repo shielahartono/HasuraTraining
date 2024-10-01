@@ -314,7 +314,7 @@ hasura_otel_dropped_spans{reason="send_failed"} 0.0
 # TYPE hasura_otel_sent_logs counter
 hasura_otel_sent_logs 0.0
 ```
-*hasura_otel_sent_logs 0.0
+* hasura_otel_sent_logs 0.0
 
  metriks ini memberikan informasi tentang jumlah log yang berhasil dikirim oleh sistem observasi Hasura.
 
@@ -377,7 +377,7 @@ hasura_postgres_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name=
 ```
 * hasura_postgres_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 0.0
 
-  metriks ini menunjukkan
+  metriks ini menunjukkan  menunjukkan jumlah koneksi aktif saat ini ke database PostgreSQL melalui Hasura.
 
 
 ```
@@ -388,7 +388,7 @@ hasura_postgres_max_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_n
 
 * hasura_postgres_max_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 50.0
 
-  metriks ini berarti atau menujukkan
+  metriks ini berarti atau menujukkan menunjukkan jumlah maksimum koneksi yang diizinkan ke database PostgreSQL melalui Hasura. Disini ditunjukkan bahwa 50          koneksi yang dapat terhubung.
 
 
 ```
@@ -408,29 +408,29 @@ hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",so
 hasura_postgres_pool_wait_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.6099813e-2
 hasura_postgres_pool_wait_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1
 ```
-*  hasura_postgres_pool_wait_time histogram
+* hasura_postgres_pool_wait_time histogram
 
-   metriks ini
+  metriks ini menunjukkan histogram yang digunakan untuk mengukur waktu tunggu yang dialami ketika aplikasi (Hasura) menunggu untuk mendapatkan koneksi dari pool    koneksi PostgreSQL
 
      1. hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
         
-        metriks ini
+        metriks ini mencatat jumlah waktu tunggu yang terjadi ketika aplikasi menunggu untuk mendapatkan koneksi dari pool, dengan batas atas maksimum waktu               tunggu sebesar 0.01 detik (atau 10 milidetik) dan menghasilkan nilai 0.
         
      2. hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="0.1",role="primary"} 1
 
-        metriks ini
+        metriks ini mencatat jumlah waktu tunggu yang dialami oleh permintaan yang harus menunggu untuk mendapatkan koneksi dari pool PostgreSQL, dengan batas             waktu maksimum 0.1 detik (atau 100 milidetik) dan terdeteksi 1x kejadian.
 
      3. hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="0.3",role="primary"} 1
 
-        metriks ini
+        metriks ini mencatat jumlah waktu tunggu yang dialami oleh permintaan yang harus menunggu untuk mendapatkan koneksi dari pool PostgreSQL, dengan batas             waktu maksimum 0.3 detik (atau 300 milidetik) dan terdeteksi 1x kejadian.
 
 * hasura_postgres_pool_wait_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.6099813e-2
 
-  metriks ini menunjukkan
+  metriks ini menunjukkan metrik ini menunjukkan bahwa sistem PostgreSQL Anda berfungsi dengan baik dalam hal manajemen koneksi, dan tidak ada masalah besar yang    mempengaruhi akses ke database dengan nilai 0.016099813 detik yang setara dengan 16.1 milidetik.
   
 * hasura_postgres_pool_wait_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1
 
-  metriks ini menunjukkan 
+  metriks ini mencatat jumlah total kejadian atau permintaan yang menunggu untuk mendapatkan koneksi dari pool PostgreSQL. Nilai 1 berarti ada 1 kejadian yang       apabila ada permintaan lain harus menunggu koneksi selesai selama periode pengukuran sedang berlangsung.
 
 
 ```
@@ -440,7 +440,7 @@ hasura_scheduled_trigger_request_bytes_total 0.0
 ```
 * hasura_scheduled_trigger_request_bytes_total 0.0
 
-  metriks ini menunjukkan
+  metriks ini mencatat total ukuran (dalam byte) dari semua tubuh permintaan (request bodies) yang dikirim untuk pemicu terjadwal (scheduled triggers) di Hasura. 
 
 
 ```
@@ -450,7 +450,7 @@ hasura_scheduled_trigger_response_bytes_total 0.0
 ```
 * hasura_scheduled_trigger_response_bytes_total 0.0
 
-  metriks ini menunjukkan 
+  metriks ini mencatat total ukuran (dalam byte) dari semua tubuh respons (response bodies) yang diterima dari pemicu terjadwal (scheduled triggers) di Hasura       dengan nilai 0.
 
 ```
 # HELP hasura_websocket_connections Current number of active WebSocket connections
@@ -460,7 +460,8 @@ hasura_websocket_connections 0.0
 
 * hasura_websocket_connections 0.0
 
-  metriks ini menunjukkan 
+  metriks ini mencatat jumlah koneksi WebSocket yang aktif ke server Hasura untuk komunikasi real-time dan mendapatkan nilai 0.0 yang berarti tidak ada koneksi 
+  websocket yang saat ini aktif.
 
 
 ```
@@ -480,7 +481,29 @@ hasura_websocket_message_queue_time_bucket{le="+Inf"} 0
 hasura_websocket_message_queue_time_sum 0.0
 hasura_websocket_message_queue_time_count 0
 ```
+*  hasura_websocket_message_queue_time histogram
 
+  metriks ini 
+
+    1.
+
+      metriks ini menjelaskan bahwa 
+      
+    2.
+
+      metriks ini menjelaskan bahwa
+      
+    3.
+
+      metriks ini menjelaskan bahwa
+
+* hasura_websocket_message_queue_time_sum 0.0
+
+  metriks ini menjelaskan bahwa
+  
+* hasura_websocket_message_queue_time_count 0
+
+  metriks ini menjelaskan bahwa 
 
 
 ```
@@ -500,6 +523,28 @@ hasura_websocket_message_write_time_bucket{le="+Inf"} 0
 hasura_websocket_message_write_time_sum 0.0
 hasura_websocket_message_write_time_count 0
 ```
+* hasura_websocket_message_write_time histogram
+
+  metriks ini
+
+
+    1. hasura_websocket_message_write_time_bucket{le="1.0e-2"} 0
+       
+       metriks ini 
+    2. hasura_websocket_message_write_time_bucket{le="0.1"} 0
+ 
+       metriks ini
+    4. hasura_websocket_message_write_time_bucket{le="0.3"} 0
+ 
+       metriks ini
+       
+* hasura_websocket_message_write_time_sum 0.0
+
+  metriks ini
+
+* hasura_websocket_message_write_time_count 0
+
+  metriks ini
 
 
 
@@ -511,7 +556,7 @@ hasura_websocket_messages_received_bytes_total 0.0
 
 * hasura_websocket_messages_received_bytes_total 0.0
 
-metriks ini menunjukkan 
+  metriks ini menunjukkan mencatat total ukuran (dalam byte) dari semua pesan yang diterima melalui koneksi WebSocket ke server Hasura termasuk semua data yang      diterima dari klien selama sesi WebSocket.
 
 
 
