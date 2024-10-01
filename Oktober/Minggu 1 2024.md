@@ -100,7 +100,7 @@ hasura_event_trigger_request_bytes_total 0.0
 
 * hasura_event_trigger_request_bytes_total 0.0
 
-berfungsi untuk memantau berapa banyak data yang telah dikirim dalam bentuk permintaan saat event trigger.Untuk nilai 0.0 berarti tidak ada data yang telah terkirim dalam bentuk request.
+  berfungsi untuk memantau berapa banyak data yang telah dikirim dalam bentuk permintaan saat event trigger.Untuk nilai 0.0 berarti tidak ada data yang telah        terkirim dalam bentuk request.
 
 ```
 # HELP hasura_event_trigger_response_bytes_total Total size of HTTP response bodies received via event triggers (experimental)
@@ -109,7 +109,7 @@ hasura_event_trigger_response_bytes_total 0.0
 ```
 * hasura_event_trigger_response_bytes_total 0.0
 
-bertujuan untuk memantau seberapa banyak data yang diterima sebagai respons setelah permintaan event trigger dilakukan.Untuk nilai 0.0 berarti tidak ada data yang diterima dalam bentuk respons HTTP melalui event triggers
+  bertujuan untuk memantau seberapa banyak data yang diterima sebagai respons setelah permintaan event trigger dilakukan.Untuk nilai 0.0 berarti tidak ada data      yang diterima dalam bentuk respons HTTP melalui event triggers
 
 ```
 
@@ -120,7 +120,7 @@ hasura_events_fetched_per_batch 0.0
 
 * hasura_events_fetched_per_batch 0.0
 
-  digunakan untuk memantau seberapa banyak event yang berhasil diambil dari sumber data dalam satu kali pengambilan atau proses.Untuk nilai 0.0 berarti tidak ada event yang diambil dalam batch tersebut pada saat metrik ini dicatat.
+  digunakan untuk memantau seberapa banyak event yang berhasil diambil dari sumber data dalam satu kali pengambilan atau proses.Untuk nilai 0.0 berarti tidak ada    event yang diambil dalam batch tersebut pada saat metrik ini dicatat.
 
   metrik ini memberikan informasi tentang efisiensi dan volume event yang diproses dalam sistem.
 
@@ -152,7 +152,7 @@ hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
 ```
 * hasura_graphql_execution_time_seconds
   
-  metriks ini merupakan metrik histogram yang mencatat waktu eksekusi dari permintaan GraphQL (dalam detik). Metrik ini membantu untuk memantau performa eksekusi query dan mutation di Hasura.
+  metriks ini merupakan metrik histogram yang mencatat waktu eksekusi dari permintaan GraphQL (dalam detik). Metrik ini membantu untuk memantau performa eksekusi    query dan mutation di Hasura.
 
 
     1. hasura_graphql_execution_time_seconds_bucket{operation_type="mutation",le="1.0e-2"} 0
@@ -199,7 +199,7 @@ hasura_graphql_requests_total{response_status="success",operation_type="query",p
 ```
 *hasura_graphql_requests_total{response_status="success",operation_type="query",parameterized_query_hash="7116865cef017c3b09e5c9271b0e182a6dcf4c01"} 1.0
 
-  metriks ini berguna untuk melakukan mengambil data request secara total untuk respons status dengan nilai sukses dan juga operation type dengan nilai query. Dan memeberikan parameter hash untuk identifikasi query yang dijalankan. Dan pada metriks ini terdapat 1 permintaan query yang berhasil di jalankan.
+  metriks ini berguna untuk melakukan mengambil data request secara total untuk respons status dengan nilai sukses dan juga operation type dengan nilai query. Dan   memeberikan parameter hash untuk identifikasi query yang dijalankan. Dan pada metriks ini terdapat 1 permintaan query yang berhasil di jalankan.
 
 ```
 # HELP hasura_http_connections Current number of active HTTP connections (excluding WebSocket connections)
@@ -209,7 +209,7 @@ hasura_http_connections 1.0
 
 *hasura_http_connections 1.0
 
-metriks ini berguna untuk menunjukkan jumlah koneksi HTTP aktif yang sedang digunakan oleh Hasura. Dan pada metriks ini terdapat 1 koneksi aktif yang dibuka oleh Hasura
+  metriks ini berguna untuk menunjukkan jumlah koneksi HTTP aktif yang sedang digunakan oleh Hasura. Dan pada metriks ini terdapat 1 koneksi aktif yang dibuka       oleh Hasura
 
 
 ```
@@ -282,7 +282,7 @@ hasura_otel_dropped_logs{reason="send_failed"} 0.0
 
 * hasura_otel_dropped_logs{reason="buffer_full"} 0.0
 
-  metriks ini berguna untuk menunjukkan jumlah log yang dibuang oleh sistem observasi Hasura karena buffer yang penuh. Untuk nilai didapatkan yaitu 0 berarti tidak ada.
+  metriks ini berguna untuk menunjukkan jumlah log yang dibuang oleh sistem observasi Hasura karena buffer yang penuh. Untuk nilai didapatkan yaitu 0 berarti        tidak ada.
 
 * hasura_otel_dropped_logs{reason="send_failed"} 0.0
 
@@ -343,25 +343,27 @@ hasura_postgres_connection_init_time_count{conn_info="HASURA_GRAPHQL_DATABASE_UR
 ```
 *  hasura_postgres_connection_init_time histogram
 
-    metriks ini
+    metriks ini berguna untuk membuat histogram yang mengukur waktu yang diperlukan untuk menginisialisasi koneksi ke basis data PostgreSQL di Hasura.
 
       1. hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-6",role="primary"} 0
 
-          berarti
+          berarti menunjukkan bahwa tidak ada koneksi yang berhasil diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−61.0×10 −6 detik (atau 1                  mikrodetik) untuk database yang terhubung.
+         
       2.hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-4",role="primary"} 0
 
-          berarti
+          berarti menunjukkan bahwa tidak ada koneksi ke database yang diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−41.0×10 −4 detik (atau 100             mikrodetik) untuk database yang terhubung.
+   
       3.hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
 
-          berarti
+          berarti tidak ada koneksi ke database yang berhasil diinisialisasi dalam waktu kurang dari atau sama dengan 1.0×10−21.0×10 −2 detik (atau 10 milidetik)            untuk database terhubung. 
          
 * hasura_postgres_connection_init_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.5990853e-2
 
-    metriks ini
+  metriks ini memberikan informasi tentang total waktu inisialisasi koneksi ke database untuk koneksi dengan role primary.
 
 * hasura_postgres_connection_init_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1
 
-    metriks ini 
+  metriks ini memberikan informasi tentang jumlah koneksi yang telah diinisialisasi ke database PostgreSQL melalui Hasura
 
 
 ```
@@ -369,6 +371,9 @@ hasura_postgres_connection_init_time_count{conn_info="HASURA_GRAPHQL_DATABASE_UR
 # TYPE hasura_postgres_connections gauge
 hasura_postgres_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 0.0
 ```
+* hasura_postgres_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 0.0
+
+  metriks ini menunjukkan
 
 
 ```
@@ -376,6 +381,10 @@ hasura_postgres_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name=
 # TYPE hasura_postgres_max_connections gauge
 hasura_postgres_max_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 50.0
 ```
+
+* hasura_postgres_max_connections{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 50.0
+
+  metriks ini berarti atau menujukkan
 
 
 ```
@@ -395,6 +404,29 @@ hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",so
 hasura_postgres_pool_wait_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.6099813e-2
 hasura_postgres_pool_wait_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1
 ```
+*  hasura_postgres_pool_wait_time histogram
+
+   metriks ini
+
+     1. hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
+        
+        metriks ini
+        
+     2.hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="0.1",role="primary"} 1
+
+        metriks ini
+
+     3.hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="0.3",role="primary"} 1
+
+       metriks ini
+
+* hasura_postgres_pool_wait_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.6099813e-2
+
+  metriks ini menunjukkan
+  
+* hasura_postgres_pool_wait_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1
+
+  metriks ini menunjukkan 
 
 
 ```
@@ -402,7 +434,9 @@ hasura_postgres_pool_wait_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",sou
 # TYPE hasura_scheduled_trigger_request_bytes_total counter
 hasura_scheduled_trigger_request_bytes_total 0.0
 ```
+* hasura_scheduled_trigger_request_bytes_total 0.0
 
+  metriks ini menunjukkan
 
 
 ```
@@ -410,7 +444,9 @@ hasura_scheduled_trigger_request_bytes_total 0.0
 # TYPE hasura_scheduled_trigger_response_bytes_total counter
 hasura_scheduled_trigger_response_bytes_total 0.0
 ```
+* hasura_scheduled_trigger_response_bytes_total 0.0
 
+  metriks ini menunjukkan 
 
 ```
 # HELP hasura_websocket_connections Current number of active WebSocket connections
@@ -418,6 +454,9 @@ hasura_scheduled_trigger_response_bytes_total 0.0
 hasura_websocket_connections 0.0
 ```
 
+* hasura_websocket_connections 0.0
+
+  metriks ini menunjukkan 
 
 
 ```
