@@ -22,7 +22,7 @@
 
     2. Kemudian pada bagian get masukkan alamat atau ip hasura dan port yang digunakan  
 
-      Disini saya menggunakan http://10.100.14.15:8087//v1/metrics
+       Disini saya menggunakan http://10.100.14.15:8087//v1/metrics
       
     3. Kemudian Klik Send, Apabila muncul "Authorization Required" Lanjut ke step 4 .
 
