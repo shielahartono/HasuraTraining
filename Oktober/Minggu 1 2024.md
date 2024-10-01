@@ -180,7 +180,7 @@ hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
         metriks ini berarti bahwa 1 query telah dieksekusi dengan waktu eksekusi kurang dari atau sama dengan 0.01 detik (10 milidetik).
 
 
-    3. hasura_graphql_execution_time_seconds_bucket{operation_type="query",le="3.0e-2"} 1
+    2. hasura_graphql_execution_time_seconds_bucket{operation_type="query",le="3.0e-2"} 1
        
         metriks ini berarti bahwa 1 query yang sama juga selesai dalam waktu kurang dari atau sama dengan 0.03 detik (30 milidetik).
 
@@ -412,17 +412,17 @@ hasura_postgres_pool_wait_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",sou
 
    metriks ini
 
-     1.hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
+     1. hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
         
         metriks ini
         
-     2.hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="0.1",role="primary"} 1
+     2. hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="0.1",role="primary"} 1
 
         metriks ini
 
-     3.hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="0.3",role="primary"} 1
+     3. hasura_postgres_pool_wait_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="0.3",role="primary"} 1
 
-       metriks ini
+        metriks ini
 
 * hasura_postgres_pool_wait_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.6099813e-2
 
