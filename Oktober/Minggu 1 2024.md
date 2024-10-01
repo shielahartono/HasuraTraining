@@ -263,11 +263,11 @@ hasura_oneoff_events_processed_total{status="success"} 0.0
 
 * hasura_oneoff_events_processed_total{status="failed"} 0.0
 
-  metriks ini 
+  metriks ini menunjukkan jumlah total one-off events yang telah diproses dan berstatus gagal
 
 * hasura_oneoff_events_processed_total{status="success"} 0.0
 
-  metriks ini
+  metriks ini menunjukkan jumlah total one-off events yang telah diproses dan berstatus success
 
 
 ```
@@ -277,6 +277,14 @@ hasura_otel_dropped_logs{reason="buffer_full"} 0.0
 hasura_otel_dropped_logs{reason="send_failed"} 0.0
 ```
 
+* hasura_otel_dropped_logs{reason="buffer_full"} 0.0
+
+  metriks ini berguna untuk menunjukkan jumlah log yang dibuang oleh sistem observasi Hasura karena buffer yang penuh. Untuk nilai didapatkan yaitu 0 berarti tidak ada.
+
+* hasura_otel_dropped_logs{reason="send_failed"} 0.0
+
+  metriks ini berguna untuk menunjukkan jumlah log yang dibuang oleh sistem observasi Hasura karena kegagalan pengiriman.
+
 
 ```
 # HELP hasura_otel_dropped_spans Total number of trace spans dropped due to high trace volume
@@ -285,13 +293,23 @@ hasura_otel_dropped_spans{reason="buffer_full"} 0.0
 hasura_otel_dropped_spans{reason="send_failed"} 0.0
 ```
 
+* hasura_otel_dropped_spans{reason="buffer_full"} 0.0
+
+  metriks ini berguna untuk menunjukkan jumlah "spans" yang dibuang oleh sistem observasi Hasura karena buffer yang penuh.
+
+* hasura_otel_dropped_spans{reason="send_failed"} 0.0
+
+  metriks ini berguna untuk memberikan informasi tentang jumlah spans yang tidak berhasil dikirim oleh sistem observasi Hasura.
+
 
 ```
 # HELP hasura_otel_sent_logs Total number of successfully exported log lines
 # TYPE hasura_otel_sent_logs counter
 hasura_otel_sent_logs 0.0
 ```
+*hasura_otel_sent_logs 0.0
 
+  metriks ini memberikan informasi tentang jumlah log yang berhasil dikirim oleh sistem observasi Hasura.
 
 
 ```
@@ -299,6 +317,9 @@ hasura_otel_sent_logs 0.0
 # TYPE hasura_otel_sent_spans counter
 hasura_otel_sent_spans 0.0
 ```
+* hasura_otel_sent_spans 0.0
+
+  metriks ini memberikan informasi tentang jumlah "span" yang berhasil dikirim oleh sistem observasi Hasura.
 
 ```
 # HELP hasura_postgres_connection_init_time Time taken (in seconds) to establish and initialise a new PostgreSQL connection
@@ -317,6 +338,27 @@ hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_U
 hasura_postgres_connection_init_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.5990853e-2
 hasura_postgres_connection_init_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1
 ```
+*  hasura_postgres_connection_init_time histogram
+
+    metriks ini
+
+      1. hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-6",role="primary"} 0
+
+          berarti
+      2.hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-4",role="primary"} 0
+
+          berarti
+      3.hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-2",role="primary"} 0
+
+          berarti
+         
+* hasura_postgres_connection_init_time_sum{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1.5990853e-2
+
+    metriks ini
+
+* hasura_postgres_connection_init_time_count{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",role="primary"} 1
+
+    metriks ini 
 
 
 ```
