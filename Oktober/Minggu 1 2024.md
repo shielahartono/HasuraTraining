@@ -72,6 +72,8 @@ hasura_event_fetch_time_per_batch_seconds_count 0
 * hasura_event_fetch_time_per_batch_seconds histogram
 
   metriks ini untuk memantau seberapa cepat Hasura mengambil batch event dari database dan memetakan distribusi latensi pengambilan tersebut dalam berbagai interval waktu
+
+
   1.hasura_event_fetch_time_per_batch_seconds_bucket{le="1.0e-4"} 0
       metriks diatas memiliki arti bahwa jumlah event yang diambil dalam waktu kurang dari atau sama dengan 0.0001 detik (1.0e-4) memiliki nilai 0
   
