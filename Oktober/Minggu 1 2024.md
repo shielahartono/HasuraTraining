@@ -156,10 +156,12 @@ hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
 
 
     1. hasura_graphql_execution_time_seconds_bucket{operation_type="mutation",le="1.0e-2"} 0
+       
         metriks ini berarti bahwa tidak ada permintaan mutation yang diselesaikan dalam waktu kurang dari atau sama dengan 0.01 detik (10 milidetik).
 
 
     2. hasura_graphql_execution_time_seconds_bucket{operation_type="mutation",le="3.0e-2"} 0
+       
         metriks ini menunjukan atau memiliki arti bahwa tidak ada permintaan mutation yang diselesaikan dalam waktu kurang dari atau sama dengan 0.03 detik (30            milidetik)
 
 
@@ -174,10 +176,12 @@ hasura_graphql_execution_time_seconds_count{operation_type="query"} 1
 
 
     1. hasura_graphql_execution_time_seconds_bucket{operation_type="query",le="1.0e-2"} 1
+       
         metriks ini berarti bahwa 1 query telah dieksekusi dengan waktu eksekusi kurang dari atau sama dengan 0.01 detik (10 milidetik).
 
 
-    2. hasura_graphql_execution_time_seconds_bucket{operation_type="query",le="3.0e-2"} 1
+    3. hasura_graphql_execution_time_seconds_bucket{operation_type="query",le="3.0e-2"} 1
+       
         metriks ini berarti bahwa 1 query yang sama juga selesai dalam waktu kurang dari atau sama dengan 0.03 detik (30 milidetik).
 
 
