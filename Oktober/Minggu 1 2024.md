@@ -495,7 +495,7 @@ hasura_websocket_message_queue_time_count 0
       
     3. hasura_websocket_message_queue_time_bucket{le="100.0"} 0
 
-      metriks ini menjelaskan bahwa tidak ada pesan yang menunggu di antrean selama 30 hingga 100 detik. Ini mengkonfirmasi bahwa sistem sangat               responsif, dengan tidak ada pesan yang memerlukan waktu antre lebih dari 30 detik.
+      metriks ini menjelaskan bahwa tidak ada pesan yang menunggu di antrean selama 30 hingga 100 detik. Ini mengkonfirmasi bahwa sistem sangat                          responsif, dengan tidak ada pesan yang memerlukan waktu antre lebih dari 30 detik.
 
 * hasura_websocket_message_queue_time_sum 0.0
 
@@ -525,28 +525,28 @@ hasura_websocket_message_write_time_count 0
 ```
 * hasura_websocket_message_write_time histogram
 
-  metriks ini
+  metriks ini membuat bentuk histogram yang  digunakan untuk melacak dan mengukur waktu yang diperlukan oleh sistem untuk menulis pesan WebSocket ke klien.          Histogram ini akan memberikan informasi tentang distribusi waktu yang dihabiskan untuk operasi penulisan tersebut
 
 
     1. hasura_websocket_message_write_time_bucket{le="1.0e-2"} 0
        
-       metriks ini 
-    2. hasura_websocket_message_write_time_bucket{le="0.1"} 0
+       metriks ini berarti tidak ada pesan WebSocket yang berhasil ditulis dalam waktu kurang dari atau sama dengan 0,01 detik (10 milidetik)
+       
+    3. hasura_websocket_message_write_time_bucket{le="0.1"} 0
  
-       metriks ini
-    4. hasura_websocket_message_write_time_bucket{le="0.3"} 0
+       metriks ini tidak ada pesan yang ditulis dalam waktu kurang dari atau sama dengan 0,1 detik (100 milidetik).
+       
+    5. hasura_websocket_message_write_time_bucket{le="0.3"} 0
  
-       metriks ini
+       metriks ini tidak ada pesan yang ditulis dalam waktu kurang dari atau sama dengan 0,3 detik (300 milidetik).
        
 * hasura_websocket_message_write_time_sum 0.0
 
-  metriks ini
+  metriks ini berarti total waktu kumulatif yang dihabiskan untuk menulis pesan WebSocket adalah 0 detik
 
 * hasura_websocket_message_write_time_count 0
 
-  metriks ini
-
-
+  metriks ini berarti jumlah dari pesan websocket yang ditulis adalah tidak ada atau 0.
 
 ```
 # HELP hasura_websocket_messages_received_bytes_total Total size of WebSocket messages received
