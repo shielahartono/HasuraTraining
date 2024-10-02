@@ -1,5 +1,5 @@
 # Minggu Ke 3 September 2024
-# Setting VPN, Akses Rancher dan Deploy Hasura
+## Setting VPN, Akses Rancher dan Deploy Hasura
 
 ## Setting VPN 
 Koneksikan VPN yang sudah di dapatkan dengan Pritunl.
