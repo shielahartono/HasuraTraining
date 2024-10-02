@@ -1,4 +1,4 @@
-# Buat Use Case, CRUD, Rest Query & Mutation dan Graphql
+# Buat Use Case, CRUD, REST Query & Mutation dan Graphql
 
 
 ## 1. Use Case
