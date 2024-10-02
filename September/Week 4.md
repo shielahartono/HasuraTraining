@@ -26,6 +26,7 @@
 
 ## 4. Delete Data
 
+![image](https://github.com/user-attachments/assets/83263475-ff10-421a-a8f4-b1c1f10bc10f)
 
 
 
