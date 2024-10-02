@@ -24,7 +24,7 @@
 
 
 
-
+## 4. Delete Data
 
 
 
@@ -32,5 +32,46 @@
 
 ## 5. Read Data 
 ![image](https://github.com/user-attachments/assets/6d579b9c-ff1d-4f4e-9e5f-0ad55aad3b2e)
+
+
+## 6. Menggunakan REST Query
+
+![image](https://github.com/user-attachments/assets/9970384a-6a98-41b9-b2c4-9f8b7abd3c6f)
+
+
+## 7. Output REST pada POSTMAN
+
+![image](https://github.com/user-attachments/assets/a2486f83-5584-4112-88bb-6f177e937742)
+
+
+Output dari query REST AllDataMobil
+
+```
+{
+    "mobil": [
+        {
+            "harga_per_hari": 500000.0,
+            "lokasi": "Jakarta",
+            "merk": "Toyota",
+            "nama_mobil": "Avanza"
+        },
+        {
+            "harga_per_hari": 600000.0,
+            "lokasi": "Bandung",
+            "merk": "Honda",
+            "nama_mobil": "Civic"
+        },
+        {
+            "harga_per_hari": 1900000.0,
+            "lokasi": "Jakarta",
+            "merk": "Toyota",
+            "nama_mobil": "Zenix"
+        }
+    ]
+}
+
+```
+
+
 
 
