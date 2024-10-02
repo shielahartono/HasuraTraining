@@ -8,3 +8,8 @@
   Berikut untuk gambar ER Diagramnya:
 
   ![image](https://github.com/user-attachments/assets/4e1e5e43-9e81-45c8-bc33-33f425f1c96b)
+
+
+
+
+![image](https://github.com/user-attachments/assets/d841c3a4-10fb-4596-a709-49372a0f6a5a)
