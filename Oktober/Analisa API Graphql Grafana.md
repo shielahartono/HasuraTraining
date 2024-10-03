@@ -9,18 +9,18 @@
    1. URL : 10.100.13.8:3000
    2. username: admin
    3. password : password
-
 ```
+
 ## 2. Melakukan Akses dan Hit melalui Postman
 
-      Untuk akses Hasura disini menggunakan Hasura dari Mas Ferdi :
+      * 1. Untuk akses Hasura disini menggunakan Hasura dari Mas Ferdi :
 
 ```
   1. URL : http://10.100.13.24/console
   2. Password : myadminsecretkey
 ```
 
-    Disini saya melakukan hit dengan method POST menggunakan Postman 
+    * 2. Disini saya melakukan hit dengan method POST menggunakan Postman 
 
     Berikut untuk Query yang digunakan: 
 
