@@ -10,6 +10,7 @@
   
 * password : password
 
+Gunakan Alamat diatas untuk melakukan akses ke Grafana, dan HARUS mengaktifkan VPN
 
 
 
