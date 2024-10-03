@@ -1,6 +1,6 @@
-## Analisa API Graphql Grafana (Dashboard Hasura HTTP Graphql dan Hasura Health)
+# Analisa API Graphql Grafana (Dashboard Hasura HTTP Graphql dan Hasura Health)
 
-# Akses Grafana
+## 1. Akses Grafana
 
   Untuk akses ke grafana HARUS menyalakan VPN
   
