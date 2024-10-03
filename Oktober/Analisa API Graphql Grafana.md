@@ -167,7 +167,6 @@ Berikut untuk hasil dari postman :
 
 ## 3. Analisis Hasil Grafana untuk Hasura HTTP Graphql
 
-        ![image](https://github.com/user-attachments/assets/59a688e8-c00a-48e7-a247-d832d8d298cc)
+![image](https://github.com/user-attachments/assets/59a688e8-c00a-48e7-a247-d832d8d298cc)
         
-
-        Hasil yang saya ambil disini merupakan hasil 3 jam sebelumnya pada tanggal 3 Oktober 2024
+      Hasil yang saya ambil disini merupakan hasil 3 jam sebelumnya pada tanggal 3 Oktober 2024
