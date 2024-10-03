@@ -13,16 +13,18 @@
 
 ## 2. Melakukan Akses dan Hit melalui Postman
 
-      * 1. Untuk akses Hasura disini menggunakan Hasura dari Mas Ferdi :
+      1. Untuk akses Hasura disini menggunakan Hasura dari Mas Ferdi :
 
 ```
   1. URL : http://10.100.13.24/console
   2. Password : myadminsecretkey
 ```
 
-    * 2. Disini saya melakukan hit dengan method POST menggunakan Postman 
+
+    2. Disini saya melakukan hit dengan method POST menggunakan Postman 
 
     Berikut untuk Query yang digunakan: 
+
 
 ```
 query MyQuery {
@@ -34,3 +36,8 @@ query MyQuery {
   }
 }
 ```
+
+
+## 3. Analisis Hasil Grafana untuk Hasura 
+
+
