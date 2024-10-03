@@ -2,7 +2,7 @@
 
 ## 1. Akses Grafana
 
-        Untuk akses Grafana HARUS mengaktifkan VPN, alamat akses yang digunakan adalah :
+        Untuk akses Grafana HARUS mengaktifkan VPN, alamat akses yang digunakan adalah:
 
         
 * URL : 10.100.13.8:3000
