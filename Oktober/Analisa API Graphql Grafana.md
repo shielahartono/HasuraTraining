@@ -188,3 +188,8 @@ Pada hasil gambar diatas menampilkan data bahwa :
 
 * Top Mutation : Pada bagian ini tidak ada data yang terekam.
 
+* Top Error Rate : Bagian ini untuk memantau dan mengidentifikasi layanan, query, atau mutasi yang paling sering mengalami kesalahan (error).
+
+![image](https://github.com/user-attachments/assets/c10e164f-2a9d-48d2-bec9-907522b091f2)
+
+
