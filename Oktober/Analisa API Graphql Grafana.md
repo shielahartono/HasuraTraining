@@ -7,9 +7,7 @@
   Untuk alamat akses yang digunakan yaitu :
 ```
    1. URL : 10.100.13.8:3000
-
    2. username: admin
-
    3. password : password
 
 ```
