@@ -183,6 +183,8 @@ Pada hasil gambar diatas menampilkan data bahwa :
 
 * Mutation Latency (P95): Waktu tunggu untuk mutasi lebih tinggi, yaitu 270 milidetik. Ini menunjukkan bahwa operasi mutasi memerlukan lebih banyak waktu dibandingkan query biasa.
 
-  
-* Top Queries dan Mutations: Pada bagian ini, ditampilkan layanan yang paling sering digunakan, yaitu "hasuraferdy" dengan 3 query tercatat. Namun, untuk mutasi, tidak ada data lebih lanjut yang terdeteksi.
+
+* Top Queiries : Pada bagian ini service yang paling sering berjalan yaitu "hasuraferdy" dengan 3 kali tercatat.
+
+* Top Mutation : Pada bagian ini tidak ada data yang terekam.
 
