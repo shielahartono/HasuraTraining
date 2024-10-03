@@ -38,6 +38,131 @@ Query diatas merupakan query yang saya gunakan untuk melakukan hit dengan method
 ![image](https://github.com/user-attachments/assets/eaed9544-0ae5-433d-b13d-ac648e3d3098)
 
 
+Berikut untuk hasil dari postman :
+
+```
+{
+    "data": {
+        "TABEL1": [
+            {
+                "id": 1,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 2,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 3,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 4,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 5,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 6,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 7,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 8,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 9,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 10,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 11,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 12,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 13,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 14,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 15,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 16,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 17,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 18,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            },
+            {
+                "id": 19,
+                "isi1": "abc",
+                "isi2": "abc",
+                "isi3": "abc"
+            }
+        ]
+    }
+}
+
+```
 
 
 ## 3. Analisis Hasil Grafana untuk Hasura 
