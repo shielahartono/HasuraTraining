@@ -170,3 +170,13 @@ Berikut untuk hasil dari postman :
 ![image](https://github.com/user-attachments/assets/59a688e8-c00a-48e7-a247-d832d8d298cc)
         
 Hasil yang saya ambil disini merupakan hasil 3 jam sebelumnya pada tanggal 3 Oktober 2024
+
+
+Pada hasil gambar diatas menampilkan data bahwa :
+
+        * Total Queries (Jumlah Query): Sebanyak 70 query telah dilakukan pada Services ini.
+
+        * Query Latency (P95): Latensi atau waktu tunggu untuk query berada pada 26,2 milidetik. 
+          Untuk P95 artinya 95% dari query selesai dalam waktu kurang dari atau sama dengan 26,2 ms,               
+          yang menunjukkan bahwa performa cukup baik.
+
