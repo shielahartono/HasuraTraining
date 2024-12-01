@@ -51,7 +51,9 @@ Berikut adalah ilustrasi proses
 
   Thin client adalah klien yang memiliki sedikit kemampuan pemrosesan atau penyimpanan lokal dan sangat bergantung pada server untuk menjalankan sebagian besar tugas.
 
-Ciri-ciri Thin Client pada Kerberos:
+
+
+## Ciri-ciri Thin Client pada Kerberos:
 
 
 1. Minimal Pemrosesan Lokal:
@@ -85,6 +87,39 @@ Perangkat atau aplikasi yang hanya bertugas mengarahkan permintaan autentikasi, 
 
   2. Tidak cocok untuk operasi yang membutuhkan pemrosesan lokal atau offline.
 
+
+
+# Apa itu Thick Client ?
+
+Thick client adalah klien yang mampu melakukan pemrosesan data secara lokal, termasuk sebagian logika autentikasi Kerberos.
+
+
+## Ciri-ciri Thick Client pada Kerberos:
+
+  1.Pemrosesan Lokal Lebih Banyak:
+  
+  Thick client sering kali memanfaatkan API Kerberos untuk melakukan pemrosesan, seperti memvalidasi tiket atau mengelola kunci sesi.
+
+  2.Ketergantungan Lebih Rendah pada Server:
+  
+  Sebagian besar operasi autentikasi dapat dilakukan secara lokal setelah tiket diperoleh.
+  
+  3.Contoh Implementasi:
+
+  Aplikasi desktop yang memiliki library Kerberos bawaan (seperti aplikasi berbasis Active Directory).
+
+## Kelebihan Thick Client:
+
+  1.Lebih cepat dalam mengakses sumber daya karena mengurangi lalu lintas jaringan.
+  
+  2.Memungkinkan operasi offline dalam beberapa skenario, selama tiket masih valid.
+
+  
+## Kekurangan Thick Client:
+
+  1.Membutuhkan perangkat keras yang lebih kuat untuk pemrosesan.
+  
+  2.Keamanan lebih rentan karena data sensitif (seperti tiket atau kunci sesi) dapat disimpan di klien.
 
    
 
